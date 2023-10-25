@@ -1,0 +1,191 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #426ea7;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos para as cores do texto nas classes */
+.total-goals {
+    color: blue; /* Texto em azul */
+}
+
+.completed-goals {
+    color: green; /* Texto em verde */
+}
+
+.remaining-goals {
+    color: red; /* Texto em vermelho */
+}
+
+/* Estilos para o contêiner e o quadrado sombreado */
+.goal-counters {
+    display: inline-block;
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 5px;
+    color: black; /* Cor padrão para o texto dentro do contêiner */
+}
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário de Metas */
+.goal-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#goal-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-goal {
+    background-color: #008000; /* Verde */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#add-goal:hover {
+    background-color: #005700; /* Verde mais escuro */
+}
+
+/* Lista de Metas */
+.goal-list {
+    list-style: none;
+}
+
+li {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.remove-goal,
+.complete-goal {
+    background-color: #ff0000; /* Vermelho */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.2s;
+}
+
+.remove-goal:hover,
+.complete-goal:hover {
+    background-color: #cc0000; /* Vermelho mais escuro */
+}
+
+.complete-goal {
+    background-color: #008000; /* Verde */
+}
+
+.complete-goal:hover {
+    background-color: #005700; /* Verde mais escuro */
+    cursor: pointer;
+}
+
+/* Estilos para metas concluídas */
+.completed {
+    background-color: #b0d7b0; /* Verde claro */
+    text-decoration: line-through;
+}
+
+/* Estilos para o rodapé */
+a {
+    color: #fff; /* Define a cor do link como branco */
+    text-decoration: none; /* Remove a decoração de link (sublinhado) */
+    font-weight: bolder; /* Deixa o texto do link mais ousado */
+}
+
+/* Define estilos para os links quando o mouse está sobre eles */
+a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse sobre o link */
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: right; /* Alinhe o texto do rodapé à direita */
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex; /* Para alinhar itens na horizontal */
+    justify-content: space-between;
+    max-width: 100%; /* Alterado para ocupar a largura total da tela */
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-info, .footer-links, .footer-social {
+    flex: 1;
+    padding: 10px; /* Adicionado um valor para o preenchimento */
+    text-align: left;
+}
+
+.footer-social1, .footer-social2 {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    float: right; /* Alinhar à direita */
+}
+
+/* Outros estilos para links no rodapé */
+.footer-links a, .footer-social1 a, .footer-social2 a {
+    text-decoration: none;
+    color: #000000;
+    padding: 1px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.footer-links a:hover, .footer-social1 a:hover, .footer-social2 a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+}

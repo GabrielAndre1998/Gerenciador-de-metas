@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Metas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Gerenciador de Metas</h1>
+    </header>
+
+    <main>
+        <div class="goal-form">
+            <input type="text" id="goal-input" placeholder="Digite sua meta">
+            <button id="add-goal">Adicionar Meta</button>
+        </div>
+
+        <div class="goal-counters">
+            Total de Metas: <span class="total-goals" id="total-goals">0</span><br>
+            Metas Alcançadas: <span class="completed-goals" id="completed-goals">0</span><br>
+            Metas Restantes: <span class="remaining-goals" id="remaining-goals">0</span>
+        </div>
+        
+
+        <div class="goal-list">
+            <ul id="goal-list"></ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Entre em Contato</h3>
+                <p>Email: gabrielandreerodrigues@gmail.com</p>
+                <p>Telefone: (xx) xxxx-xxxx</p>
+            </div>
+
+            <div class="footer-social1">
+                <li><a href="https://www.linkedin.com/in/gabriel-andr%C3%A9-580b93270/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+            </div>
+            
+            <div class="footer-social2">
+                <li><a href="https://github.com/GabrielAndre1998" target="_blank"><i class="bi bi-github"></i></a></li>
+            </div>
+        </div>
+        
+        <div class="footer-copyright">
+            <p>&copy; Site criado e desenvolvido por <a href="https://github.com/GabrielAndre1998" target="_blank">Gabriel André Rodrigues</a> 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
